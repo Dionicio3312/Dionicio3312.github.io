@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Formulario de Reseña - Sí</title>
+</head>
+<body>
+  <h2>Deja tu reseña</h2>
+  <form action="https://hook.integromat.com/tu_webhook_si" method="POST">
+    <label for="nombre">Nombre:</label><br />
+    <input type="text" id="nombre" name="nombre" required /><br /><br />
+
+    <label for="calificacion">Calificación (1-5):</label><br />
+    <input type="number" id="calificacion" name="calificacion" min="1" max="5" required /><br /><br />
+
+    <label for="comentario">Comentario:</label><br />
+    <textarea id="comentario" name="comentario" rows="4" cols="40"></textarea><br /><br />
+
+    <button type="submit">Enviar</button>
+  </form>
+</body>
+</html>
